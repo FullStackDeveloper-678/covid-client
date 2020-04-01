@@ -42,12 +42,8 @@
     "yarn": "^1.22.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "tsc -b src && react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public -c .storybook -o build"
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open"
   },
   "eslintConfig": {
     "extends": "react-app"
